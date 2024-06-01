@@ -1,7 +1,9 @@
 import React from 'react';
 import './style.css';
-
+import DotIcon from "./Dot-Icon.jpg"
 import bg from "./bg.jpg";
+import { Link, Element } from 'react-scroll';
+
 import profilePic from "./profilePic.jpg"
 
 function Portfolio() {
@@ -10,13 +12,13 @@ function Portfolio() {
       <nav className="navbar">
         <div className="brand">SHEZA</div>
         <div className="nav-links">
-          <a href="#education" className="nav-link">Education</a>
-          <a href="#skills" className="nav-link">Skills</a>
-          <a href="#experience" className="nav-link">Experience</a>
-          <a href="#profile" className="nav-link">Profile</a>
-          <a href="#portfolio" className="nav-link">Portfolio</a>
-          <a href="#clients" className="nav-link">Clients</a>
-          <a href="#contact" className="nav-link">Contact</a>
+        <Link to="education" smooth={true} duration={500} offset={-100}className="nav-link">Education</Link>
+          <Link to="skills" smooth={true} duration={500} offset={-100} className="nav-link">Skills</Link>
+          <Link to="experience" smooth={true} duration={500} offset={-100} className="nav-link">Experience</Link>
+          <Link to="profile" smooth={true} duration={500} offset={-100} className="nav-link">Profile</Link>
+          <Link to="portfolio" smooth={true} duration={500} offset={-100} className="nav-link">Portfolio</Link>
+          <Link to="clients" smooth={true} duration={500} offset={-100} className="nav-link">Clients</Link>
+          <Link to="contact" smooth={true} duration={500} offset={-100} className="nav-link">Contact</Link>
         </div>
       </nav>
       <div className="intro">
@@ -36,6 +38,8 @@ function Portfolio() {
         </section>
       </div>
       <h2 class="title">About Me</h2>
+      <hr className="divider" />
+
       <div className="about-me">
         <div className="about-me-text">
           
@@ -72,8 +76,290 @@ function Portfolio() {
         </div>
       </div>
 
+      <Element name="education" className="section">
+
+      <h1 className='education-text'>EDUCATION</h1>
+      <div className="education">
+        <div className='education-timeline'>
+
+            <div class="educontainer up-education">
+              <div class="edu-text">
+                <h3>2008 - 2010</h3>
+                <h4>Master of Computer Science</h4>
+                <img src={DotIcon} alt="Dot Icon"></img>
+
+            </div>
+          </div>
+
+          <div class="educontainer up-education">
+              <div class="edu-text">
+                <h3>2004 - 2008</h3>
+                <h4>Bachelor of Computer Science</h4>
+                <img src={DotIcon} alt="Dot Icon"></img>
+
+            </div>
+          </div>
+          <div class="educontainer up-education">
+              <div class="edu-text">
+                <h3>2004 - 2008</h3>
+                <h4>Bachelor of Creative Design</h4>
+                <img src={DotIcon} alt="Dot Icon"></img>
+
+            </div>
+          </div>
 
 
+
+          <div class="educontainer down-education">
+        <div class="edu-text">
+          <h3>UNIVERSITY OF NORTH CAROLINA</h3>
+          <p> North Carolina, USA</p>
+          <p>
+            Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore
+            eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.
+             </p>         
+        </div>
+      </div>
+
+
+        
+          <div class="educontainer down-eduaction">
+        <div class="edu-text">
+          <h3>UNIVERSITY OF NORTH CAROLINA</h3>
+          <p> North Carolina, USA</p>
+          <p>
+            Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore
+            eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.
+             </p>         
+        </div>
+      </div>
+
+
+          
+
+          <div class="educontainer down-education">
+        <div class="edu-text">
+          <h3>UNIVERSITY OF BOLTON</h3>
+          <p> Bolton, United Kingdome</p>
+          <p>
+            Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore
+            eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.
+             </p>         
+        </div>
+      </div>
+
+
+        </div>
+
+
+      </div>
+      </Element>
+
+
+
+      <Element name="skills" className="section">
+
+      <h1 className='skills-text'>SKILLS</h1>
+      
+      <div className='skill-container'>
+        <div className='skill-column'>
+        <div className='skill-box'>
+        <span className='skill-title'>ADOBE PHOTOSHOP</span>
+
+          <div className='skill-bar'>
+              <span className='skill-per'>
+                <span className='tooltip'>90%</span>
+              </span>
+              </div>
+        </div>
+
+        <div className='skill-box'>
+        <span className='skill-title'>ADOBE ILLUSTRATOR</span>
+
+          <div className='skill-bar'>
+              <span className='skill-per'>
+                <span className='tooltip'>85%</span>
+              </span>
+              </div>
+        </div>
+
+        <div className='skill-box'>
+        <span className='skill-title'>ADOBE AFTER EFFECTS</span>
+
+          <div className='skill-bar'>
+              <span className='skill-per'>
+                <span className='tooltip'>97%</span>
+              </span>
+              </div>
+        </div>
+        <div className='skill-box'>
+        <span className='skill-title'>SKETCH</span>
+
+          <div className='skill-bar'>
+              <span className='skill-per'>
+                <span className='tooltip'>90%</span>
+              </span>
+              </div>
+        </div>
+      </div>
+      <div className='skill-column'>
+        <div className='skill-box'>
+        <span className='skill-title'>HTML 5</span>
+
+          <div className='skill-bar'>
+              <span className='skill-per'>
+                <span className='tooltip'>90%</span>
+              </span>
+              </div>
+        </div>
+
+        <div className='skill-box'>
+        <span className='skill-title'>CSS 3 ANIMATION</span>
+
+          <div className='skill-bar'>
+              <span className='skill-per'>
+                <span className='tooltip'>85%</span>
+              </span>
+              </div>
+        </div>
+        <div className='skill-box'>
+        <span className='skill-title'>COMMUNICATION</span>
+
+          <div className='skill-bar'>
+              <span className='skill-per'>
+                <span className='tooltip'>97%</span>
+              </span>
+              </div>
+        </div>
+        <div className='skill-box'>
+        <span className='skill-title'>CREATIVITY</span>
+
+          <div className='skill-bar'>
+              <span className='skill-per'>
+                <span className='tooltip'>90%</span>
+              </span>
+              </div>
+        </div>
+        </div>
+
+</div>
+ <hr className="divider" />
+
+ </Element>
+
+ <Element name="experience" className="section">
+
+    <h1 className='experience-text'>EXPERIENCE</h1>
+    <hr className="divider" />
+
+
+    <div className='experience-timeline'>
+
+      <div class="container left-container">
+        <img src={DotIcon} alt="Dot Icon"></img>
+        <div class="textbox">
+          <h3>2018 - Present</h3>
+          <h4>CREATIVE DIRECTOR</h4>
+        </div>
+      </div>
+
+      <div class="container right-container">
+        <div class="textbox">
+          <h3>HOPLONY TECH LIMITED</h3>
+          <p> Newyork, USA</p>
+          <p>
+            Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore
+            eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.
+             </p>         
+        </div>
+      </div>
+
+    <div class="container left-container">
+        <div class="textbox">
+          <h3>HOPLONY TECH LIMITED</h3>
+          <p> Newyork, USA</p>
+          <p>
+            Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore
+            eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.
+             </p>         
+        </div>
+      </div>
+      <div class="container right-container">
+      <img src={DotIcon} alt="Dot Icon"></img>
+
+        <div class="textbox">
+          <h3>2016 - 2018</h3>
+          <h4>ASSOCIATE DESIGN DIRECTOR</h4>
+        </div>
+      </div>
+
+      <div class="container left-container">
+      <img src={DotIcon} alt="Dot Icon"></img>
+
+        <div class="textbox">
+          <h3>2013 - 2016</h3>
+          <h4>SENIOR UI/UX DESIGNER</h4>
+        </div>
+      </div>
+      
+
+      <div class="container right-container">
+        <div class="textbox">
+          <h3>HOPLONY TECH LIMITED</h3>
+          <p> Newyork, USA</p>
+          <p>
+            Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore
+            eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.
+             </p>         
+        </div>
+      </div>
+
+      <div class="container left-container">
+        <div class="textbox">
+          <h3>HOPLONY TECH LIMITED</h3>
+          <p> Newyork, USA</p>
+          <p>
+            Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore
+            eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.
+             </p>         
+        </div>
+      </div>
+
+      <div class="container right-container">
+      <img src={DotIcon} alt="Dot Icon"></img>
+
+        <div class="textbox">
+          <h3>2012 - 2013</h3>
+          <h4>UI/UX DESIGNER</h4>
+        </div>
+      </div>
+
+
+      <div class="container left-container">
+      <img src={DotIcon} alt="Dot Icon"></img>
+
+        <div class="textbox">
+          <h3>2010 - 2012</h3>
+          <h4>FRONTEND DEVELOPER</h4>
+        </div>
+      </div>
+      <div class="container right-container">
+        <div class="textbox">
+          <h3>HOPLONY TECH LIMITED</h3>
+          <p> Newyork, USA</p>
+          <p>
+            Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore
+            eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.
+             </p>         
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+    </Element>
 
 
     </div>
