@@ -2,6 +2,25 @@ import React from 'react';
 import './style.css';
 import DotIcon from "./Dot-Icon.jpg"
 import bg from "./bg.jpg";
+import Icon from '@mdi/react';
+import { mdiGithub } from '@mdi/js';
+import { mdiDropbox } from '@mdi/js';
+import { mdiUnity } from '@mdi/js';
+import { mdiSlack } from '@mdi/js';
+import { mdiSalesforce } from '@mdi/js';
+import { mdiGitlab } from '@mdi/js';
+import { mdiDevTo } from '@mdi/js';
+import { mdiAngular } from '@mdi/js';
+import { mdiKickstarter } from '@mdi/js';
+import { mdiDolby } from '@mdi/js';
+import { mdiFontAwesome } from '@mdi/js';
+import { mdiGoodreads } from '@mdi/js';
+
+
+
+
+
+
 import { Link, Element } from 'react-scroll';
 
 import profilePic from "./profilePic.jpg"
@@ -25,9 +44,8 @@ function Portfolio() {
         <div className="bg-overlay"></div>
         <section className="intro-text">
           <h1>
-            HI
-            <span>,</span>
-            <span> I AM</span>
+            <span></span>
+            <span> HI , I AM</span>
             <br />
             <span>SHEZA</span>
             <br />
@@ -356,14 +374,155 @@ function Portfolio() {
 
 
     </div>
+  </Element>
 
+  <Element name='profile' className='section'>
+      <hr className="divider" />
+      <h1 className='profile-header'>PROFILE</h1>
+      <div className="profile-container">
+        <div className='profile-grid'>
+          <div className="profile-textbox">
+            <div className='profile-icon'>
+              <Icon path={mdiGithub} size={1} />
+              </div>
 
+              <a className='profile-text'>Github</a>
+          </div>
+          <div className="profile-textbox">
+            <div className='profile-icon'>
+              <Icon path={mdiDropbox} size={1} />
+            </div>
+              <a className='profile-text'>Dropbox</a>
+          
+          </div>
+          <div className="profile-textbox">
+            <div className='profile-icon'>
+              <Icon path={mdiSalesforce} size={1} />
+            </div>
+              <a className='profile-text'>Salesforce</a>
+            
+          </div>
+          <div className="profile-textbox">
+            <div className='profile-icon'>
+              <Icon path={mdiUnity} size={1} />
+            </div>
+
+              <a className='profile-text'>Unity</a>
+          </div>
+
+          <div className="profile-textbox">
+            <div className='profile-icon'>
+            <Icon path={mdiAngular} size={1} />
+            </div>
+
+              <a className='profile-text'>Angular</a>
+          </div>
+          <div className="profile-textbox">
+            <div className='profile-icon'>
+            <Icon path={mdiGitlab} size={1} />
+            </div>
+
+              <a className='profile-text'>Gitlab</a>
+          </div>
+          <div className="profile-textbox">
+            <div className='profile-icon'>
+            <Icon path={mdiDevTo} size={1} />
+            </div>
+
+              <a className='profile-text'>Dev-To</a>
+          </div>
+          <div className="profile-textbox">
+            <div className='profile-icon'>
+            <Icon path={mdiSlack} size={1} />
+            </div>
+
+              <a className='profile-text'>Slack</a>
+          </div>
+        </div>
+      </div>
+    </Element>
+
+    <Element name='clients' className='section'>
+      <h1 className='client-text'>CLIENTS</h1>
+      <hr className="divider" />
+
+      <div className='client-area'>
+      <div className='client-container'>
+          <div className='client-box'>
+            <div className='client-icon'>
+            <Icon path={mdiDolby} size={2} />
+            </div>
+            <div className='client-name'>Dolby</div>
+          </div>
+          <div className='client-box'>
+            <div className='client-icon'>
+            <Icon path={mdiKickstarter} size={2} />
+            </div>
+            <div className='client-name'>Kickstarter</div>
+          </div>
+          <div className='client-box'>
+          <div className='client-icon'>
+            <Icon path={mdiGoodreads} size={2} />
+            </div>
+            <div className='client-name'>Goodreads</div>
+          </div>
+          <div className='client-box'>
+            <div className='client-icon'>
+            <Icon path={mdiFontAwesome} size={2} />
+          </div>
+            <div className='client-name'>FontAwesome</div>
+          </div>
+        </div>
+      </div>
+      <hr className="divider" />
 
     </Element>
 
+    <Element name='contact' className='contact'>
+      <h1 className='contact-text'>CONTACT</h1>
+      <hr className="divider" />
+      <div className='contact-area'>
+        <div className='left-contact-area'>
+        <div className='contact-box'>
+            <input type='text' placeholder='Name' className='input-field' />
+            <input type='email' placeholder='Email' className='input-field' />
+        </div>
+        <div className='subject-box'>
+            <input type='text' placeholder='Subject' className='input-field' />
+        </div>
+          <div className='message-box'>
+            <textarea placeholder='Message' className='message-field'></textarea>
+          </div>
+          <button className='submit'>Submit</button>
 
-    </div>
+        </div>
 
+        <div className='right-contact-area'>
+        <div className='contact-info'>
+          <div className='contact-info-box'>
+              <h2>SHEZA MISHAL</h2>
+              <h3>UI/UX DESIGNER</h3>
+            </div>
+          </div>
+          <div className='contact-info-col'>
+            <h3>Phone</h3>
+            <h4>987-123-6547</h4>
+          </div>
+          <div className='contact-info-col'>
+            <h3>Email</h3>
+            <h4>browny@info.com</h4>
+          </div>
+          <div className='contact-info-col'>
+            <h3>Website</h3>
+            <h4>www.brownsine.com</h4>
+        </div>
+        </div>
+      </div>
+    </Element>
+
+  </div>
+
+  
   );
 }
 

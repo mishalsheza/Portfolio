@@ -239,15 +239,15 @@
 /* SKILLS */
 .skills-text{
     font-size: 36px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 100px;
+    margin-bottom: 50px;
     color: #515050;
     justify-content: center;
     text-align: center;
 
 }
 .skill-container {
-    margin: 20px;
+    margin-bottom: 200px;
     display: flex;
     justify-content: center;
 }
@@ -259,7 +259,7 @@
 }
 .skill-box {
     width:500px;
-    margin:10px;
+    margin:20px;
     
 }
 
@@ -311,8 +311,8 @@
 /* Experience Timeline */
 .experience-text{
     font-size: 36px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     color: #515050;
     justify-content: center;
     text-align: center;
@@ -324,6 +324,7 @@
     max-width: 1200px;
     margin: 100px auto;
     position: relative;
+    margin-top: 100px;
 }
 
 .container {
@@ -406,6 +407,214 @@
     z-index: -1;
 }
 
+/* PROFILE */
+.profile-header{
+    font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    color: #515050;
+    justify-content: center;
+    text-align: center;
+}
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  
+  .profile-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; /* Add gap between items */
+    width: 100%;
+    max-width: 800px;
+    justify-content: center; /* Center the grid items horizontally */
+    align-items: center; /* Center the grid items vertically */
+  }
+  
+  .profile-textbox {
+    display: flex;
+    flex-direction: column; /* Stack icon and text vertically */
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    height:200px;
+    width: 300px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for zoom and background color */
 
- 
+  }
+  
+  .profile-icon {
+    margin-bottom: 10px; /* Space between icon and text */
+  }
+  .profile-icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .profile-text {
+    font-size: 16px;
+    color: #333;
+    bottom: 20px;
+  }
+  
+  .profile-divider {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 
+  .profile-textbox:hover {
+    transform: scale(1.05); /* Zoom in */
+    background-color: #b636ff; /* Change background color to purple */
+  }
+  
+  .profile-textbox:hover .profile-text, 
+  .profile-textbox:hover .profile-icon {
+    color: white; /* Change text and icon color to white on hover */
+  }
+/* CLIENT */
+
+  .client-text {
+    font-size: 36px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #515050;
+    justify-content: center;
+    text-align: center;
+
+  }
+  
+  .client-area {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .client-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom:50px;
+    width: 100%;
+  }
+  
+  .client-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    margin-top: 50px;
+  }
+  
+  .client-icon {
+    margin-bottom: 10px;
+  }
+  
+  .client-name {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+/* CONTACT */
+.contact {
+    padding: 20px;
+  }
+  
+  .contact-text {
+    font-size: 36px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #515050;
+    justify-content: center;
+    text-align: center;
+
+  }
+  .contact-area {
+    display: flex;
+    justify-content: center; /* Center the contact-area horizontally */
+    align-items: flex-start;
+    gap: 20px; /* Adjust gap as needed */
+    flex-wrap: wrap; /* Ensure responsiveness */
+    margin-top: 50px;
+  }
+  
+  .left-contact-area,
+  .right-contact-area {
+    flex: 1;
+    min-width: 300px; /* Ensures responsive layout */
+    margin-left: 200px; /* Add margin for spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+  }
+  
+  .contact-box,
+  .subject-box,
+  .message-box {
+    margin-bottom: 10px;
+    width: 100%; /* Make sure the boxes take the full width of their parent */
+  }
+  
+  .input-field,
+  .message-field {
+    width: 80%; /* Make inputs full width within their container */
+    padding: 10px;
+    margin-bottom: 10px; /* Space between inputs */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .message-field {
+    height: 100px;
+    resize: none;
+  }
+  
+  .contact-info {
+    margin-right: 100px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .contact-info-box {
+    margin-right: 100px;
+    color: #555;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .contact-info-col {
+    margin-right: 100px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info-col h3 {
+    margin-right: 100px;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .contact-info-col h4 {
+    margin-right: 100px;
+    font-size: 1em;
+    color: #555;
+  }
+  .submit{
+    width:100px;
+    height:40px;
+    font-size: 16px;
+    border-radius: 10px;
+    color: white;
+    background-color: #b636ff;
+    border: none;
+  }
+  
