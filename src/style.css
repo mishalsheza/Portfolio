@@ -74,29 +74,6 @@
     font-size: 48px;
     font-weight: bold;
 }
-
-.intro-text p {
-    font-size: 24px;
-    margin: 20px 0;
-    font-weight:300;
-}
-
-.resume-button {
-    padding: 10px 20px;
-    font-size: 18px;
-    background-color: #b636ff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.resume-button:hover {
-    background-color: #ddd;
-}
-
-
 .about-me {
     display: flex;
     align-items: flex-start; /* Align items at the top */
